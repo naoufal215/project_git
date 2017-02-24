@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Banque</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"
+          th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" type="text/css" href="../css/myStyle.css"
+          th:href="@{/css/myStyle.css}"/>
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-default">
+            <div class="containter-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a th:href="@{/operations}">Operations</a></li>
+                    <li><a th:href="@{/comptes}">comptes</a></li>
+                    <li><a th:href="@{/clients}">clients</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a th:href="@{/login?logout}">login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section layout:fragment="content">
+        <div class=""></div>
+    </section>
+    <footer>
+        <div class="navbar-fixed-bottom">
+            <small>
+                @naoufal.berouain@gmail.com
+            </small>
+        </div>
+    </footer>
+</body>
+</html>
